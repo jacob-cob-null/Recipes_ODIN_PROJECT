@@ -14,9 +14,12 @@
     flex-direction: row;
     padding: 10px 3em 10px 3em;
     gap: 10px;
-    z-index: 0;
+    z-index: 10;
     background-color: white;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.559);
+    font-family: "Bebas Neue";
+    color: black;
+    font-size: 1.5em;
 }
 .text {
     height: 100%;
@@ -58,6 +61,7 @@
     max-width: 45%;
     max-height: 1000px;
     object-fit: cover;
+    animation: fromLeft 1s forwards ease-out; 
 }
 
 
@@ -68,6 +72,7 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+    animation: fromRight 1s forwards ease-out;
 }
 .info {
     margin: 0 auto;
@@ -106,4 +111,21 @@
 .steps {
     flex: 3;
     font-size: 20px;
+}
+/*ANIMATIONS*/
+@keyframes fromLeft {
+    0% { 
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes fromRight {
+    0% { 
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
