@@ -55,6 +55,7 @@
     margin-left: 4em;
     color: white;
     mix-blend-mode: lighten;
+    animation: down 1s forwards ease-out;
 }
 .header h1 {
     font-size: 15em;
@@ -143,3 +144,14 @@
         transform: translateY(0px);
     }
 }
+@keyframes down {
+    0% {
+        transform: translateY(-300px);
+        opacity: 0;;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
