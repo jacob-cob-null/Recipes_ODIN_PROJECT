@@ -34,18 +34,18 @@
 }
 .hero {
     width: 90vw;
-    height: 400px;
+    height: 620px;
     background-color: azure;
     display: flex;
     overflow: hidden;
 }
 
 .bg_vid {
-    height: 700px;
+    height: 1000px;
     position: absolute;
     filter: brightness(75%);
     z-index: 1;
-    object-fit: cover;
+    object-fit:cover;
     overflow-y: hidden;
 }
 .header {
