@@ -156,6 +156,7 @@
 }
 
 /*RESPONSIVENESS*/
+/*MOBILE*/
 @media only screen and (max-width: 600px) {
     .nav {
         padding: 8px 2em 8px 2em;
