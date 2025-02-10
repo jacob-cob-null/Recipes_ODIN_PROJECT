@@ -16,7 +16,7 @@
     flex-direction: row;
     padding: 10px 3em 10px 3em;
     gap: 10px;
-    z-index: 0;
+    z-index: 10;
     background-color: white;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.559);
 }
@@ -155,3 +155,34 @@
     }
 }
 
+/*RESPONSIVENESS*/
+@media only screen and (max-width: 600px) {
+    .nav {
+        padding: 8px 2em 8px 2em;
+    }
+    .bg_vid {
+        height: 600px;
+    }
+    .header h1 {
+        font-size: 8em;
+        position: relative;
+    }
+    .header {
+        margin: 0 auto;
+        margin-left: 1em;
+    }
+    .hero {
+        height: 300px;
+    }
+    .header h3 {
+        font-size: 2em;
+        top: 180px;
+    }
+    .selection {
+        flex-direction: column;
+        height: 500px;
+    }
+    .selection h2 {
+        font-size: 3em;
+    }
+}
